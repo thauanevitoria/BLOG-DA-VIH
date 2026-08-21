@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,115 +6,124 @@
     <title>Curiosidades sobre Luan Santana</title>
 
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #e6f7ff;
-            color: #234;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #dff4ff;
+            color: #333;
         }
 
         header {
-            background-color: #aee6ff;
+            background-color: #a9ddf5;
             text-align: center;
-            padding: 40px;
+            padding: 35px 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
         }
 
         header h1 {
-            color: #176b87;
+            color: #075b83;
             font-size: 40px;
+            margin-bottom: 10px;
         }
 
-        nav {
-            background-color: #7dd3f0;
-            padding: 15px;
-            text-align: center;
+        header p {
+            color: #17485f;
+            font-size: 18px;
         }
 
-        nav a {<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curiosidades sobre Luan Santana</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #e6f7ff;
-            color: #234;
-        }
-
-        header {
-            background-color: #aee6ff;
-            text-align: center;
-            padding: 40px;
-        }
-
-        header h1 {
-            color: #176b87;
-            font-size: 40px;
-        }
-
-        nav {
-            background-color: #7dd3f0;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 20px;
-            font-weight: bold;
-        }
-
-        main {
-            max-width: 1000px;
+        .container {
+            width: 90%;
+            max-width: 1100px;
             margin: 40px auto;
-            padding: 20px;
         }
 
-        h2 {
-            color: #176b87;
+        .foto {
+            text-align: center;
+            margin-bottom: 40px;
         }
 
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+        .foto img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .introducao {
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .introducao h2 {
+            color: #087cae;
+            margin-bottom: 15px;
+        }
+
+        .introducao p {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .curiosidades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
         }
 
         .card {
             background-color: white;
-            width: 280px;
             padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px #b5dce8;
+            border-radius: 18px;
+            border-top: 6px solid #75c9ed;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
         }
 
         .card h3 {
-            color: #176b87;
+            color: #087cae;
+            margin-bottom: 12px;
         }
 
         .card p {
             line-height: 1.6;
-        }
-
-        .sobre {
-            background-color: #c9f0ff;
-            padding: 30px;
-            margin-top: 40px;
-            border-radius: 15px;
-            text-align: center;
+            font-size: 16px;
         }
 
         footer {
-            background-color: #176b87;
-            color: white;
+            margin-top: 50px;
+            background-color: #a9ddf5;
             text-align: center;
             padding: 25px;
-            margin-top: 40px;
+            color: #17485f;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .foto img {
+                width: 230px;
+                height: 230px;
+            }
         }
     </style>
 </head>
@@ -124,244 +131,102 @@
 <body>
 
     <header>
-        <h1>💙 Curiosidades sobre Luan Santana</h1>
-        <p>Um blog feito para os fãs!</p>
+        <h1>💙 Curiosidades sobre Luan Santana 💙</h1>
+        <p>Conheça um pouco mais sobre um dos grandes nomes da música sertaneja brasileira!</p>
     </header>
 
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#curiosidades">Curiosidades</a>
-        <a href="#sobre">Sobre</a>
-    </nav>
+    <main class="container">
 
-    <main id="inicio">
+        <div class="foto">
+            <img src="luan-santana.jpg" alt="Luan Santana">
+        </div>
 
-        <h2>✨ Bem-vindo!</h2>
+        <section class="introducao">
+            <h2>Sobre Luan Santana</h2>
 
-        <p>
-            Aqui você vai encontrar curiosidades sobre a vida,
-            a carreira e as músicas de Luan Santana.
-        </p>
-
-        <section id="curiosidades">
-
-            <div class="cards">
-
-                <div class="card">
-                    <h3>🎤 Começo da carreira</h3>
-                    <p>
-                        Luan Santana começou sua carreira musical ainda jovem
-                        e conquistou rapidamente muitos fãs.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>🎶 Meteoro</h3>
-                    <p>
-                        A música "Meteoro" foi um dos grandes sucessos
-                        que ajudaram Luan a ficar conhecido no Brasil.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>⭐ Sucesso</h3>
-                    <p>
-                        Luan Santana se tornou um dos nomes mais conhecidos
-                        da música sertaneja brasileira.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>💿 Álbuns</h3>
-                    <p>
-                        Durante sua carreira, Luan lançou diversos álbuns
-                        e projetos musicais.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>💙 Fãs</h3>
-                    <p>
-                        O cantor possui uma grande quantidade de fãs
-                        espalhados pelo Brasil.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>🎸 Sertanejo</h3>
-                    <p>
-                        Seu trabalho ajudou a levar o sertanejo para
-                        uma nova geração de ouvintes.
-                    </p>
-                </div>
-
-            </div>
-
+            <p>
+                Luan Santana é um cantor e compositor brasileiro que conquistou
+                milhões de fãs com suas músicas sertanejas e seu estilo marcante.
+                Ao longo de sua carreira, tornou-se um dos artistas mais conhecidos
+                da música brasileira.
+            </p>
         </section>
 
-        <section class="sobre" id="sobre">
-            <h2>💫 Sobre o blog</h2>
-            <p>
-                Este blog foi criado para reunir curiosidades
-                sobre Luan Santana em um espaço bonito e azul-bebê. 💙
-            </p>
+        <section class="curiosidades">
+
+            <div class="card">
+                <h3>🎤 1. Início da carreira</h3>
+                <p>
+                    Luan começou a ganhar destaque ainda jovem, principalmente
+                    depois que vídeos de suas apresentações começaram a circular
+                    pela internet.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎵 2. Um grande sucesso</h3>
+                <p>
+                    Uma das músicas que ajudou a impulsionar sua carreira foi
+                    "Meteoro", que se tornou um grande sucesso entre o público.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌟 3. Fama nacional</h3>
+                <p>
+                    Com o crescimento de sua carreira, Luan passou a realizar
+                    shows em diversas cidades brasileiras e conquistou fãs
+                    em diferentes regiões do país.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🏆 4. Prêmios</h3>
+                <p>
+                    Durante sua trajetória, o cantor recebeu diversos prêmios
+                    e indicações relacionados à música e ao entretenimento.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💿 5. Muitos álbuns</h3>
+                <p>
+                    Luan possui uma carreira marcada por vários álbuns e projetos
+                    musicais, explorando diferentes estilos dentro da música
+                    sertaneja e do pop.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>❤️ 6. Milhões de fãs</h3>
+                <p>
+                    O cantor construiu uma enorme base de fãs ao longo dos anos,
+                    que acompanha seus lançamentos, shows e projetos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎸 7. Compositor</h3>
+                <p>
+                    Além de cantar, Luan também participa do processo de criação
+                    de músicas, mostrando seu lado compositor.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📱 8. Presença na internet</h3>
+                <p>
+                    As redes sociais são uma importante forma de Luan manter
+                    contato com seus fãs e divulgar novidades sobre sua carreira.
+                </p>
+            </div>
+
         </section>
 
     </main>
 
     <footer>
-        <p>💙 Blog de Curiosidades sobre Luan Santana</p>
-        <p>Feito com HTML e CSS</p>
-    </footer>
-
-</body>
-</html>
-            color: white;
-            text-decoration: none;
-            margin: 20px;
-            font-weight: bold;
-        }
-
-        main {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        h2 {
-            color: #176b87;
-        }
-
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .card {
-            background-color: white;
-            width: 280px;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px #b5dce8;
-        }
-
-        .card h3 {
-            color: #176b87;
-        }
-
-        .card p {
-            line-height: 1.6;
-        }
-
-        .sobre {
-            background-color: #c9f0ff;
-            padding: 30px;
-            margin-top: 40px;
-            border-radius: 15px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #176b87;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>💙 Curiosidades sobre Luan Santana</h1>
-        <p>Um blog feito para os fãs!</p>
-    </header>
-
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#curiosidades">Curiosidades</a>
-        <a href="#sobre">Sobre</a>
-    </nav>
-
-    <main id="inicio">
-
-        <h2>✨ Bem-vindo!</h2>
-
-        <p>
-            Aqui você vai encontrar curiosidades sobre a vida,
-            a carreira e as músicas de Luan Santana.
-        </p>
-
-        <section id="curiosidades">
-
-            <div class="cards">
-
-                <div class="card">
-                    <h3>🎤 Começo da carreira</h3>
-                    <p>
-                        Luan Santana começou sua carreira musical ainda jovem
-                        e conquistou rapidamente muitos fãs.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>🎶 Meteoro</h3>
-                    <p>
-                        A música "Meteoro" foi um dos grandes sucessos
-                        que ajudaram Luan a ficar conhecido no Brasil.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>⭐ Sucesso</h3>
-                    <p>
-                        Luan Santana se tornou um dos nomes mais conhecidos
-                        da música sertaneja brasileira.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>💿 Álbuns</h3>
-                    <p>
-                        Durante sua carreira, Luan lançou diversos álbuns
-                        e projetos musicais.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>💙 Fãs</h3>
-                    <p>
-                        O cantor possui uma grande quantidade de fãs
-                        espalhados pelo Brasil.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>🎸 Sertanejo</h3>
-                    <p>
-                        Seu trabalho ajudou a levar o sertanejo para
-                        uma nova geração de ouvintes.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="sobre" id="sobre">
-            <h2>💫 Sobre o blog</h2>
-            <p>
-                Este blog foi criado para reunir curiosidades
-                sobre Luan Santana em um espaço bonito e azul-bebê. 💙
-            </p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>💙 Blog de Curiosidades sobre Luan Santana</p>
+        <p>💙 Blog sobre Luan Santana 💙</p>
         <p>Feito com HTML e CSS</p>
     </footer>
 
