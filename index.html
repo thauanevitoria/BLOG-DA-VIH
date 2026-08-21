@@ -1,9 +1,9 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Curiosidades sobre Luan Santana</title>
 
     <style>
@@ -11,177 +11,123 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #e6f5ff;
-            color: #234;
+            background-color: #eaf7ff;
+            color: #34495e;
         }
 
         header {
-            background: linear-gradient(135deg, #9edcff, #c9edff);
-            padding: 35px 20px;
+            background: linear-gradient(135deg, #a9ddf5, #d9f3ff);
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 100, 180, 0.15);
+            padding: 45px 20px;
+            border-bottom: 4px solid #8bcce8;
         }
 
         header h1 {
-            color: #1769aa;
-            font-size: 42px;
+            color: #247ba0;
+            font-size: 38px;
             margin-bottom: 10px;
         }
 
         header p {
-            color: #356b89;
-            font-size: 18px;
+            color: #52788a;
+            font-size: 17px;
         }
 
         nav {
-            background: #ffffff;
-            text-align: center;
+            background-color: #ffffff;
             padding: 15px;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         nav a {
-            color: #1775b8;
+            color: #247ba0;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
         }
 
         nav a:hover {
-            color: #0d4f7a;
+            color: #75bcd8;
         }
 
-        .hero {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 25px;
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            box-shadow: 0 8px 25px rgba(80, 160, 210, 0.18);
+        main {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 0 20px;
         }
 
-        .hero img {
-            width: 350px;
-            height: 350px;
-            object-fit: cover;
-            border-radius: 20px;
-            border: 6px solid #b8e7ff;
-        }
-
-        .hero-text h2 {
-            color: #1775b8;
-            font-size: 32px;
-            margin-bottom: 15px;
-        }
-
-        .hero-text p {
-            font-size: 18px;
-            line-height: 1.7;
-        }
-
-        .curiosidades {
-            max-width: 1100px;
-            margin: 50px auto;
-            padding: 20px;
-        }
-
-        .curiosidades h2 {
-            text-align: center;
-            color: #1769aa;
-            font-size: 32px;
-            margin-bottom: 30px;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        .card {
-            background: #ffffff;
+        .introducao {
+            background-color: white;
             padding: 25px;
-            border-radius: 20px;
-            box-shadow: 0 6px 18px rgba(80, 160, 210, 0.15);
-            transition: 0.3s;
-            border-top: 6px solid #9edcff;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(74, 144, 164, 0.12);
         }
 
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 25px rgba(50, 140, 200, 0.25);
-        }
-
-        .card h3 {
-            color: #1775b8;
+        .introducao h2 {
+            color: #247ba0;
             margin-bottom: 12px;
+        }
+
+        .curiosidade {
+            background-color: #ffffff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border-left: 6px solid #9bdcf5;
+            box-shadow: 0 4px 12px rgba(74, 144, 164, 0.10);
+            transition: 0.3s;
+        }
+
+        .curiosidade:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 7px 18px rgba(74, 144, 164, 0.18);
+        }
+
+        .curiosidade h3 {
+            color: #247ba0;
+            margin-bottom: 10px;
             font-size: 21px;
         }
 
-        .card p {
+        .curiosidade p {
             line-height: 1.6;
-            color: #4a6473;
         }
 
-        .sobre {
-            max-width: 900px;
-            margin: 50px auto;
-            background: #c9edff;
-            padding: 40px;
-            border-radius: 25px;
+        .destaque {
+            background-color: #c9edfc;
+            padding: 25px;
+            border-radius: 15px;
             text-align: center;
+            margin-top: 30px;
         }
 
-        .sobre h2 {
-            color: #1769aa;
-            margin-bottom: 15px;
-            font-size: 30px;
-        }
-
-        .sobre p {
-            line-height: 1.8;
-            font-size: 17px;
+        .destaque h2 {
+            color: #247ba0;
+            margin-bottom: 10px;
         }
 
         footer {
-            background: #7bc9f2;
-            color: white;
+            background-color: #a9ddf5;
             text-align: center;
             padding: 25px;
-            margin-top: 50px;
+            margin-top: 40px;
+            color: #315c6d;
         }
 
-        footer p {
-            font-size: 15px;
-        }
-
-        @media (max-width: 800px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .hero img {
-                width: 280px;
-                height: 280px;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
+        @media (max-width: 600px) {
             header h1 {
-                font-size: 32px;
+                font-size: 29px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
             }
         }
     </style>
@@ -189,9 +135,9 @@
 
 <body>
 
-    <header>
+    <header id="inicio">
         <h1>💙 Curiosidades sobre Luan Santana</h1>
-        <p>Um cantinho especial para conhecer mais sobre o cantor</p>
+        <p>Um cantinho especial para conhecer mais sobre um dos grandes nomes da música brasileira.</p>
     </header>
 
     <nav>
@@ -200,113 +146,89 @@
         <a href="#sobre">Sobre o Blog</a>
     </nav>
 
-    <section class="hero" id="inicio">
+    <main>
 
-        <!--
-        Se você tiver a foto do Luan salva na pasta do projeto,
-        coloque o arquivo como "luan.jpg" e use:
-        src="luan.jpg"
-        -->
-
-        <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Luan_Santana_2019.jpg/640px-Luan_Santana_2019.jpg"
-            alt="Luan Santana">
-
-        <div class="hero-text">
-            <h2>Olá, fãs! 💙</h2>
-
+        <section class="introducao">
+            <h2>Bem-vindo ao blog! ✨</h2>
             <p>
-                Bem-vindo ao nosso blog de curiosidades sobre
-                <strong>Luan Santana</strong>!
-                Aqui você pode descobrir fatos interessantes sobre
-                a carreira, músicas e trajetória de um dos grandes
-                nomes da música sertaneja brasileira.
+                Luan Santana conquistou milhões de fãs com suas músicas,
+                apresentações e seu jeito carismático. Aqui você vai encontrar
+                algumas curiosidades interessantes sobre a carreira e a trajetória
+                do cantor.
             </p>
-        </div>
+        </section>
 
-    </section>
+        <section id="curiosidades">
 
-
-    <section class="curiosidades" id="curiosidades">
-
-        <h2>✨ Curiosidades</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>🎤 Começo da carreira</h3>
+            <div class="curiosidade">
+                <h3>🎤 1. Luan começou cedo na música</h3>
                 <p>
-                    Luan Santana ganhou grande destaque ainda jovem,
-                    especialmente após suas músicas começarem a circular
-                    pela internet e conquistarem o público brasileiro.
+                    Desde criança, Luan Santana já demonstrava interesse pela música.
+                    Seu talento começou a chamar atenção ainda durante a adolescência,
+                    quando passou a se apresentar e divulgar suas canções.
                 </p>
             </div>
 
-            <div class="card">
-                <h3>🎵 Um grande sucesso</h3>
+            <div class="curiosidade">
+                <h3>⭐ 2. O sucesso veio muito jovem</h3>
                 <p>
-                    Ao longo da carreira, Luan lançou diversos sucessos
-                    que ajudaram a popularizar ainda mais o sertanejo
-                    universitário no Brasil.
+                    Luan ganhou grande destaque ainda jovem e rapidamente passou a
+                    ocupar espaço entre os artistas mais conhecidos da música
+                    sertaneja brasileira.
                 </p>
             </div>
 
-            <div class="card">
-                <h3>🌎 Fama internacional</h3>
+            <div class="curiosidade">
+                <h3>🎵 3. "Meteoro" marcou sua carreira</h3>
                 <p>
-                    O cantor também levou sua música para fora do Brasil,
-                    realizando apresentações e conquistando fãs em
-                    diferentes lugares.
+                    A música "Meteoro" foi um dos grandes sucessos que ajudaram a
+                    tornar Luan conhecido em todo o Brasil, conquistando muitos fãs.
                 </p>
             </div>
 
-            <div class="card">
-                <h3>🏆 Prêmios</h3>
+            <div class="curiosidade">
+                <h3>🌎 4. Sua música chegou a outros lugares</h3>
                 <p>
-                    Durante sua trajetória, Luan recebeu diversos prêmios
-                    e indicações relacionados à música e ao entretenimento.
+                    Com o crescimento de sua carreira, Luan também passou a conquistar
+                    admiradores fora do Brasil e realizou apresentações internacionais.
                 </p>
             </div>
 
-            <div class="card">
-                <h3>📀 Muitos hits</h3>
+            <div class="curiosidade">
+                <h3>💙 5. Uma carreira cheia de sucessos</h3>
                 <p>
-                    Sua discografia reúne músicas românticas, sertanejas
-                    e colaborações com outros artistas brasileiros.
+                    Ao longo dos anos, Luan lançou diversos álbuns e músicas que se
+                    tornaram conhecidas pelo público. Seu estilo mistura elementos
+                    do sertanejo com diferentes influências da música pop.
                 </p>
             </div>
 
-            <div class="card">
-                <h3>💙 Carinho dos fãs</h3>
-                <p>
-                    A relação com os fãs é uma parte marcante de sua
-                    carreira, com grandes públicos acompanhando seus
-                    shows e lançamentos.
-                </p>
-            </div>
+        </section>
 
-        </div>
+        <section class="destaque">
+            <h2>💫 Você sabia?</h2>
+            <p>
+                Luan Santana é conhecido por sua forte conexão com os fãs,
+                que acompanham sua carreira desde os primeiros grandes sucessos.
+            </p>
+        </section>
 
-    </section>
+        <section class="introducao" id="sobre" style="margin-top: 30px;">
+            <h2>Sobre o blog 💙</h2>
+            <p>
+                Este blog foi criado para compartilhar curiosidades de forma
+                simples, leve e divertida sobre a trajetória de Luan Santana.
+            </p>
+        </section>
 
-
-    <section class="sobre" id="sobre">
-
-        <h2>💙 Sobre o Blog</h2>
-
-        <p>
-            Este blog foi criado para reunir curiosidades e informações
-            interessantes sobre Luan Santana de uma maneira simples,
-            bonita e divertida. O design em azul-bebê deixa a página
-            leve e combina com o tema do blog.
-        </p>
-
-    </section>
-
+    </main>
 
     <footer>
-        <p>💙 Blog de Curiosidades sobre Luan Santana | Feito com HTML e CSS</p>
+        <p>💙 Blog Curiosidades Luan Santana</p>
+        <p>Feito com carinho e muita música 🎶</p>
     </footer>
 
 </body>
 </html>
+```
+
